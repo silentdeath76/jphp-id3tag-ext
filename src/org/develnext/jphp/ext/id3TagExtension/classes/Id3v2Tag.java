@@ -24,6 +24,9 @@ import java.nio.file.Files;
 @Name("Id3v2Tag")
 @Reflection.Namespace(Id3TagExtension.ns)
 public class Id3v2Tag extends BaseWrapper<ID3v2> {
+    public static final String MIME_IMAGE_PNG = "image/png";
+    public static final String MIME_IMAGE_JPEG = "image/jpeg";
+
     private final ID3v2 id3;
 
     public Id3v2Tag(Environment env, ID3v2 wrappedObject) {
@@ -123,21 +126,25 @@ public class Id3v2Tag extends BaseWrapper<ID3v2> {
 
     @Signature
     public void setAlbumImage(String path) {
+        setAlbumImage(path, MIME_IMAGE_PNG);
+    }
+
+    @Signature
+    public void setAlbumImage(String path, String mimeType) {
+        mimeType = mimeType.trim() == null ? MIME_IMAGE_PNG : mimeType.trim();
+
         byte[] albumArt = new byte[0];
         try {
             File file = new File(path);
             if (file.exists()) {
                 albumArt = Files.readAllBytes(file.toPath());
-                // TODO add MIME type to varible
-                id3.setAlbumImage(albumArt, "image/png");
+                id3.setAlbumImage(albumArt, mimeType);
             } else {
                 throw new FileNotFoundException("File: \"" + path + "\" not found.");
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
     @Signature

@@ -32,7 +32,6 @@ public class Mp3File extends BaseObject {
     public void __construct(String file) {
         try {
             mp3File = new com.mpatric.mp3agic.Mp3File(file);
-            // ArrayList<ID3v2ChapterFrameData> list = mp3File.getId3v2Tag().getChapters();
         } catch (IOException | UnsupportedTagException | InvalidDataException e) {
             e.printStackTrace();
         }

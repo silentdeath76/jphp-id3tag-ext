@@ -2,53 +2,53 @@
 namespace id3Tag;
 
 class Id3v1Tag {
-	/**
-	 *
-	 */
-	public function getAlbum() {}
+    /**
+     *
+     */
+    public function getAlbum() {}
 
-	/**
-	 *
-	 */
-	public function getArtist() {}
+    /**
+     *
+     */
+    public function getArtist() {}
 
-	/**
-	 *
-	 */
-	public function getComment() {}
+    /**
+     *
+     */
+    public function getComment() {}
 
-	/**
-	 *
-	 */
-	public function getGenre() {}
+    /**
+     *
+     */
+    public function getGenre() {}
 
-	/**
-	 *
-	 */
-	public function getGenreDescription() {}
+    /**
+     *
+     */
+    public function getGenreDescription() {}
 
-	/**
-	 *
-	 */
-	public function getTitle() {}
+    /**
+     *
+     */
+    public function getTitle() {}
 
-	/**
-	 *
-	 */
-	public function getTrack() {}
+    /**
+     *
+     */
+    public function getTrack() {}
 
-	/**
-	 *
-	 */
-	public function getVersion() {}
+    /**
+     *
+     */
+    public function getVersion() {}
 
-	/**
-	 *
-	 */
-	public function getYear() {}
+    /**
+     *
+     */
+    public function getYear() {}
 
 
-	public function  setAlbum($string) {}
+    public function  setAlbum($string) {}
     public function  setArtist($string) {}
     public function  setComment($string) {}
     public function  setGenre($integer) {}

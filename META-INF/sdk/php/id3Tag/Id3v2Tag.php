@@ -4,199 +4,202 @@ namespace id3Tag;
 use \php\io\Stream;
 
 class Id3v2Tag {
-	/**
-	 *
-	 */
-	public function getAlbumImage() {}
+    const MIME_IMAGE_PNG = "image/png";
+    const MIME_IMAGE_JPEG = "image/jpeg";
 
-	/**
-	 *
-	 */
-	public function getAlbum() {}
+    /**
+     *
+     */
+    public function getAlbumImage() {}
 
-	/**
-	 *
-	 */
-	public function getArtist() {}
+    /**
+     *
+     */
+    public function getAlbum() {}
 
-	/**
-	 *
-	 */
-	public function getComment() {}
+    /**
+     *
+     */
+    public function getArtist() {}
 
-	/**
-	 *
-	 */
-	public function getGenre() {}
+    /**
+     *
+     */
+    public function getComment() {}
 
-	/**
-	 *
-	 */
-	public function getGenreDescription() {}
+    /**
+     *
+     */
+    public function getGenre() {}
 
-	/**
-	 *
-	 */
-	public function getTitle() {}
+    /**
+     *
+     */
+    public function getGenreDescription() {}
 
-	/**
-	 *
-	 */
-	public function getTrack() {}
+    /**
+     *
+     */
+    public function getTitle() {}
 
-	/**
-	 *
-	 */
-	public function getVersion() {}
+    /**
+     *
+     */
+    public function getTrack() {}
 
-	/**
-	 *
-	 */
-	public function getAlbumArtist() {}
+    /**
+     *
+     */
+    public function getVersion() {}
 
-	/**
-	 * @return \php\io\Stream
-	 */
-	public function getAlbumImageMimeType() {}
+    /**
+     *
+     */
+    public function getAlbumArtist() {}
 
-	/**
-	 *
-	 */
-	public function getArtistUrl() {}
+    /**
+     * @return \php\io\Stream
+     */
+    public function getAlbumImageMimeType() {}
 
-	/**
-	 *
-	 */
-	public function getYear() {}
+    /**
+     *
+     */
+    public function getArtistUrl() {}
 
-	/**
-	 *
-	 */
-	public function getAudiofileUrl() {}
+    /**
+     *
+     */
+    public function getYear() {}
 
-	/**
-	 *
-	 */
-	public function getBPM() {}
+    /**
+     *
+     */
+    public function getAudiofileUrl() {}
 
-	/**
-	 *
-	 */
-	public function getKey() {}
+    /**
+     *
+     */
+    public function getBPM() {}
 
-	/**
-	 *
-	 */
-	public function getDate() {}
+    /**
+     *
+     */
+    public function getKey() {}
 
-	/**
-	 *
-	 */
-	public function getComposer() {}
+    /**
+     *
+     */
+    public function getDate() {}
 
-	/**
-	 *
-	 */
-	public function getPublisher() {}
+    /**
+     *
+     */
+    public function getComposer() {}
 
-	/**
-	 *
-	 */
-	public function getOriginalArtist() {}
+    /**
+     *
+     */
+    public function getPublisher() {}
 
-	/**
-	 *
-	 */
-	public function getCopyright() {}
+    /**
+     *
+     */
+    public function getOriginalArtist() {}
 
-	/**
-	 *
-	 */
-	public function getCommercialUrl() {}
+    /**
+     *
+     */
+    public function getCopyright() {}
 
-	/**
-	 *
-	 */
-	public function getCopyrightUrl() {}
+    /**
+     *
+     */
+    public function getCommercialUrl() {}
 
-	/**
-	 *
-	 */
-	public function getAudioSourceUrl() {}
+    /**
+     *
+     */
+    public function getCopyrightUrl() {}
 
-	/**
-	 *
-	 */
-	public function getRadiostationUrl() {}
+    /**
+     *
+     */
+    public function getAudioSourceUrl() {}
 
-	/**
-	 *
-	 */
-	public function getPaymentUrl() {}
+    /**
+     *
+     */
+    public function getRadiostationUrl() {}
 
-	/**
-	 *
-	 */
-	public function getPublisherUrl() {}
+    /**
+     *
+     */
+    public function getPaymentUrl() {}
 
-	/**
-	 *
-	 */
-	public function getUrl() {}
+    /**
+     *
+     */
+    public function getPublisherUrl() {}
 
-	/**
-	 *
-	 */
-	public function getEncoder() {}
+    /**
+     *
+     */
+    public function getUrl() {}
 
-	/**
-	 *
-	 */
-	public function getWmpRating() {}
+    /**
+     *
+     */
+    public function getEncoder() {}
 
-	/**
-	 *
-	 */
-	public function getItunesComment() {}
+    /**
+     *
+     */
+    public function getWmpRating() {}
 
-	/**
-	 *
-	 */
-	public function getLyrics() {}
+    /**
+     *
+     */
+    public function getItunesComment() {}
 
-	/**
-	 *
-	 */
-	public function getDataLength() {}
+    /**
+     *
+     */
+    public function getLyrics() {}
 
-	/**
-	 *
-	 */
-	public function getLength() {}
+    /**
+     *
+     */
+    public function getDataLength() {}
 
-	/**
-	 *
-	 */
-	public function getObseleteFormat() {}
+    /**
+     *
+     */
+    public function getLength() {}
 
-	/**
-	 *
-	 */
-	public function getPadding() {}
+    /**
+     *
+     */
+    public function getObseleteFormat() {}
 
-	/**
-	 *
-	 */
-	public function getGrouping() {}
+    /**
+     *
+     */
+    public function getPadding() {}
 
-	/**
-	 *
-	 */
-	public function getPartOfSet() {}
+    /**
+     *
+     */
+    public function getGrouping() {}
+
+    /**
+     *
+     */
+    public function getPartOfSet() {}
 
 
 
-	public function setAlbum($string) {}
+    public function setAlbum($string, $mimeType = null) {}
     public function setArtist($string) {}
     public function setGenre($int) {}
     public function setGenreDescription($string) {}
