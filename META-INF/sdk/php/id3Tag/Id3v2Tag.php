@@ -199,14 +199,14 @@ class Id3v2Tag {
 
 
 
-    public function setAlbum($string, $mimeType = null) {}
+    public function setAlbum($string) {}
     public function setArtist($string) {}
     public function setGenre($int) {}
     public function setGenreDescription($string) {}
     public function setTitle($string) {}
     public function setTrack($string) {}
     public function setAlbumArtist($string) {}
-    public function setAlbumImage($path) {}
+    public function setAlbumImage($path, $mimeType = null) {}
     public function setArtistUrl($string) {}
     public function setYear($string) {}
     public function setAudiofileUrl($string) {}
