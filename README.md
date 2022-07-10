@@ -2,4 +2,4 @@
 
 *Dependencies:* https://github.com/mpatric/mp3agic
 
-*Example project:* https://hub.develnext.org/project/ngGjtwVqEBiZ
+*Example project:* https://disk.yandex.ru/d/LjIUhvCtI6emeg
