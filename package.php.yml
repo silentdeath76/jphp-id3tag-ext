@@ -16,7 +16,7 @@ gradle:
     - file:./vendor/jphp-runtime/jars/jphp-runtime-1.0.3.jar
 
 config:
-  ignore: ["/bundle/**"]
+  ignore: ["/bundle/**", "/src-bundle/**"]
 
 develnext-bundle:
   version: 1.2.0
