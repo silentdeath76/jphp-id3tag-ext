@@ -1,0 +1,25 @@
+name: jphp-id3tag-ext
+version: 1.2.0
+
+devDeps:
+  dn-bundle-plugin: '*'
+  jphp-runtime: '*'
+
+plugins:
+  - Doc
+  - Gradle
+
+gradle:
+  deps:
+    - 'com.mpatric:mp3agic:0.9.1'
+  providedDeps:
+    - file:./vendor/jphp-runtime/jars/jphp-runtime-1.0.3.jar
+
+develnext-bundle:
+  version: 1.2.0
+  name: Id3Tag
+  author: silentrs
+  icon: "develnext/bundle/id3tag/icon.png"
+  description: "Расширение для работы с mp3 тегами"
+  group: "Ethernet"
+  class: develnext\bundle\id3tag\Id3TagBundle

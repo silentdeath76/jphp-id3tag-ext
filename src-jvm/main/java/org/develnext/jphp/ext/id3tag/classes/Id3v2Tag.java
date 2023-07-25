@@ -1,21 +1,17 @@
-package org.develnext.jphp.ext.id3TagExtension.classes;
+package org.develnext.jphp.ext.id3tag.classes;
 
 import com.mpatric.mp3agic.ID3v2;
-import com.mpatric.mp3agic.ID3v22Tag;
 import jdk.jfr.Name;
-import org.develnext.jphp.ext.id3TagExtension.Id3TagExtension;
+import org.develnext.jphp.ext.id3tag.Id3TagExtension;
 import php.runtime.Memory;
 import php.runtime.annotation.Reflection;
 import php.runtime.annotation.Reflection.Signature;
 import php.runtime.env.Environment;
-import php.runtime.ext.core.classes.stream.FileStream;
 import php.runtime.ext.core.classes.stream.MiscStream;
-import php.runtime.ext.core.classes.stream.Stream;
 import php.runtime.lang.BaseWrapper;
 import php.runtime.memory.LongMemory;
 import php.runtime.memory.ObjectMemory;
 import php.runtime.memory.StringMemory;
-import php.runtime.memory.support.operation.ByteArrayInputStreamMemoryOperation;
 
 import java.io.*;
 import java.nio.file.Files;

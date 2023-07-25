@@ -1,8 +1,11 @@
 <?php
 namespace id3Tag;
 
-use \php\io\Stream;
 
+/**
+ * Class Id3v2Tag
+ * @packages id3tag
+ */
 class Id3v2Tag {
     const MIME_IMAGE_PNG = "image/png";
     const MIME_IMAGE_JPEG = "image/jpeg";
