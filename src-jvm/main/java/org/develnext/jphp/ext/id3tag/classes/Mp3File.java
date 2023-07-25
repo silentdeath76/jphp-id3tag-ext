@@ -1,11 +1,11 @@
-package org.develnext.jphp.ext.id3TagExtension.classes;
+package org.develnext.jphp.ext.id3tag.classes;
 
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.NotSupportedException;
 import com.mpatric.mp3agic.UnsupportedTagException;
 
 import jdk.jfr.Name;
-import org.develnext.jphp.ext.id3TagExtension.Id3TagExtension;
+import org.develnext.jphp.ext.id3tag.Id3TagExtension;
 import php.runtime.Memory;
 import php.runtime.annotation.Reflection;
 import php.runtime.annotation.Reflection.Signature;

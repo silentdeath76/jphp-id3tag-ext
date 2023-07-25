@@ -1,6 +1,10 @@
 <?php
 namespace id3Tag;
 
+/**
+ * Class Id3v1Tag
+ * @packages id3tag
+ */
 class Id3v1Tag {
     /**
      *

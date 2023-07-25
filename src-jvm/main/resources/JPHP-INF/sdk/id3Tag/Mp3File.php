@@ -3,6 +3,10 @@ namespace id3Tag;
 
 use \php\time\Time;
 
+/**
+ * Class Mp3File
+ * @packages id3tag
+ */
 class Mp3File {
 
     /**
