@@ -8,6 +8,12 @@ use \php\time\Time;
  * @packages id3tag
  */
 class Mp3File {
+    /**
+     * Mp3File constructor.
+     */
+    public function __construct($file)
+    {
+    }
 
     /**
      *
