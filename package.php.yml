@@ -15,6 +15,9 @@ gradle:
   providedDeps:
     - file:./vendor/jphp-runtime/jars/jphp-runtime-1.0.3.jar
 
+config:
+  ignore: ["bundle/*"]
+
 develnext-bundle:
   version: 1.2.0
   name: Id3Tag
